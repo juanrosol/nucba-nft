@@ -454,12 +454,55 @@ footer p {
 footer span {
   font-weight: 800px;
 }
+#menu-toggle {
+  display: none;
+}
 
-/* ##################MEDIAQUERIES##############3 */
+/* ######################################MEDIAQUERIES###################################### */
 @media (max-width: 992px) {
   /* .hero-info * {
     border: 1px solid red;
   } */
+  /* *******************header*********** */
+  .navbar {
+    gap: 30px;
+  }
+
+  .navbar-list {
+    position: absolute;
+    top: 65px;
+    left: 5%;
+    right: 5%;
+    flex-direction: column;
+    width: 90%;
+    background: var(--nav-bg);
+    border: 2px solid var(--electric);
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    gap: 25px;
+    padding: 45px 0;
+    display: none;
+  }
+
+  .navbar-list a {
+    font-size: 1.2rem;
+  }
+
+  .menu-label {
+    display: flex;
+    order: 2;
+  }
+
+  .menu-label img {
+    width: 25px;
+    height: 20px;
+  }
+
+  /* La magia de chequear y que pase algo */
+
+  #menu-toggle:checked + .navbar-list {
+    display: flex;
+  }
 
   .hero-info {
     width: 100%;
@@ -532,6 +575,7 @@ footer span {
   }
 }
 
+/* ####################Resolucion para celulares############################# */
 @media (max-width: 576px) {
   .hero-info h1 {
     font-size: 2rem;
