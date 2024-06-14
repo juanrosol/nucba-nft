@@ -457,6 +457,11 @@ footer span {
 #menu-toggle {
   display: none;
 }
+@media (min-width: 992px) {
+  .menu-label {
+    display: none;
+  }
+}
 
 /* ######################################MEDIAQUERIES###################################### */
 @media (max-width: 992px) {
